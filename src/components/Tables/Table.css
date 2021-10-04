@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.table-style {
+	border-collapse: collapse;
+	margin: 1rem;
+	min-width: 400px;
+}
+.table-style thead tr {
+	background: #00b4db; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#0083b0,
+		#00b4db
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#0083b0,
+		#00b4db
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	text-align: left;
+	color: black;
+}
+.table-style td,
+.table-style th {
+	padding: 12px 15px;
+}
+.table-style tbody tr {
+	border-bottom: 1px solid gray;
+}
+.table-style tbody tr:nth-of-type(even) {
+	background: #50c9c3; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#96deda,
+		#50c9c3
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#96deda,
+		#50c9c3
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

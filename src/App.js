@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import HomePage from './components/HomePage';
+import About from './components/About';
+import More from './components/More';
+import FollowMe from './components/FollowMe';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// import { Router } from 'express';
+import { Route } from 'react-router-dom';
+const App = () => {
+	return (
+		<div className='content-container'>
+			<Navbar />
+			<div>
+				<Route exact path='/' component={HomePage} />
+				<Route exact path='/about' component={About} />
+				<Route exact path='/more' component={More} />
+				<Route exact path='/follow-me' component={FollowMe} />
+			</div>
+			<Footer />
+		</div>
+	);
+};
 
 export default App;
